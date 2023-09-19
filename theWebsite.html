@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MappingThestudio64-bit / Boaz Kaizman</title>
+        <meta name="description" content="online art exhibition - panta rhei">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+       		<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script async src="https://www.youtube.com/iframe_api"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Copyright (c) 2000-2023 etracker GmbH. All rights reserved. -->
+<!-- This material may not be reproduced, displayed, modified or distributed -->
+<!-- without the express prior written permission of the copyright holder. -->
+<!-- etracker tracklet 5.0 -->
+<script type="text/javascript">
+// var et_pagename = "";
+// var et_areas = "";
+// var et_tval = 0;
+// var et_tsale = 0;
+// var et_tonr = "";
+// var et_basket = "";
+</script>
+<script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-secure-code="X4sqXE" src="//code.etracker.com/code/e.js" async></script>
+<!-- etracker tracklet 5.0 end -->
+
+	
+		<script>
+		
+	$(document).ready(function() {
+  $('#play-video').on('click', function(ev) {
+	  
+    $(".video-title")[0].src += "&autoPlay=true"; 
+	$(".video1")[0].src += "&autoplay=1";
+	$(".video2")[0].src += "&autoplay=1";
+	$(".video3")[0].src += "&autoplay=1";
+	$(".video4")[0].src += "&autoplay=1";
+	$(".video5")[0].src += "&autoplay=1";
+    ev.preventDefault();
+	document.getElementById("img-title").style.opacity = ("0.5");
+ 
+  });
+});
+
+			
+	</script>
+
+
+		<style>
+			* {
+margin:0;
+padding:0;
+}
+
+		html, body, blockquote, div, p, h1 
+{
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+		
+.button-control {
+float: left;
+width: auto; 
+margin:10px;
+padding-right: 10px;
+}
+
+
+.button-control-2 {
+width: auto;
+height: auto;
+padding: 15px;
+position: absolute;
+z-index:6;
+background-color: rgba(8, 8, 8, 0.7) ;
+display: none;
+}
+
+.button-control-title {
+width: auto;
+margin: 20px;
+z-index:5;
+}
+
+.button-control-title-2 {
+margin-bottom: 6px;
+margin-right: 6px;
+display: none;
+float:left;
+}
+
+.thumb:hover .button-control-2 {
+  display: block;
+}
+
+
+.button-control-reset, .button-control-event, .button-control-reset-2 , .button-control-reset-3 {
+width: auto; 
+background-color: rgba(103, 103, 103, 0.8);
+font-weight: 600;
+color: white;
+padding: 5px;
+border-radius: 5px;
+}
+.button-control-reset-2{
+border: solid rgba(255, 255, 255, 0.4) 1px
+}
+
+.button-control-reset-3{
+font-weight: 400; 
+text-decoration: none;
+opacity: 0.7
+}
+
+.button-control-event {
+background-color: rgba(255, 255, 0, 1);
+font-weight: 500;
+color: black;
+margin-top: 2px;
+margin-bottom: 4px;
+border-radius: 5px; 
+}
+
+		
+button
+{
+font-size: 12pt;
+margin-left: 2px;
+margin-bottom: 2px;
+border: none;
+background-color: rgba(237, 237, 237, 0.78);
+padding: 2px 6px 2px 6px ;
+}
+		
+.button-2
+{
+background-color:rgb(160, 160, 160);
+border-radius: 5px;
+
+}
+
+button:hover { transform: scale(.95);}
+		
+body{background-color: #343434;}
+
+			.video-nr {
+background-color: #e0e0e0;
+}
+
+.video-nr:hover { transform: none;}
+	
+.videoWrapper2 {
+	
+	top: 0px;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+    border: none;
+}
+.videoWrapper2 iframe {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;	
+}
+
+.thumb {width: 49.7%;
+		display: inline-block;
+}
+
+			@media only screen and (max-width: 800px) {
+  .thumb {
+    width: 100%;
+  }
+}
+			
+.thumb-rapper {
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	
+				
+iframe {
+		z-index: 2;
+		border: none;}
+
+
+
+	
+		
+.filtered-3 {
+  	filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
+	
+ filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
+-webkit-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
+-moz-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
+  opacity: 1;
+}		
+
+	.thumb-test {
+    -webkit-animation: image_blur infinite;
+}
+	@-webkit-keyframes image_blur {
+  0% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg);}
+25% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg);}
+  50% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg);}
+		75% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg);}
+  100% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg);}	
+}
+	
+	.thumb-test-stop {
+filter: none;
+}
+
+			
+#img-title {
+ width:100%; 
+ opacity:1;
+z-index: 8;
+	position: absolute;
+
+}
+	#thumb-title {
+ background-color: black;
+}
+		
+			
+	</style>
+	</head>
+	
+	<body>
+		
+		<div class="logo-container">
+		<div class="logo">
+			<ul style="background-color: gray;">
+  <li><a href="index.html">Home</a></li>
+<li><a href="theWebsite-de.html">German</a></li>
+<li><a href="#content">Contents</a></li>
+  <li><a href="infoManual.html#usability">Usability</a></li>
+  <li><a href="infoManual.html">About</a></li>
+  <li><a href="contact_form.html">Contact</a></li>
+</ul>
+				<img class="menu-sighn" src="img/menu-sighn.svg" alt="menu-sighn">
+		
+		</div>
+			<a class="logo-link" href="index.html">mappingTheStudio64bit.de</a>
+					<span class="logo-2">The website</span>	
+		</div>
+		
+		<div id="content" style="background-color: rgb(62, 62, 62);"  class="short-rapper">
+					<a class="short-link-2" href="index.html">Home</a>
+				<a  class="short-link-2" href="theVideoWorks.html">The video works</a>
+						<a style="opacity: 0.4;" class="short-link-2" href="#">The website</a>
+							<a class="short-link-2" href="theEventDebat.html">The event, debate</a>
+				<a  class="short-link-2  short-link2" href="infoManual.html">About</a>
+			<a  class="short-link short-link2 short-link-lang"  href="theWebsite-de.html">German</a>
+			</div>	
+		<div class="button-control-title">
+		
+		
+		
+			<button  class="button-control-event" onclick = 
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 " >random: onetime-event</button>
+			
+			
+			<button  class="button-control-event" onclick = 
+					"myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+				 " >random: interval-event</button>
+
+<button   class="button-control-reset-2" onclick="myNightVision(); setDefaultVision();" >first-work: infrared light</button>
+			
+			
+			<!-- 
+						<button  class="button-control-reset" onclick="urlChange()" >shuffle streams</button>
+-->
+			
+		<button  class="button-control-reset" id="play-video" >play all streams</button>
+			
+			<button  class="button-control-reset" onclick="location.reload();">reset</button>
+			
+			<button  class="button-control-reset-3" onclick="location.href='theWebsiteOnePage.html'">
+			oneWebPage
+			</button>	
+			
+			<button  class="button-control-reset-3" onclick="location.href='infoManual.html#manualButton'">
+			manualButton
+			</button>
+		</div>
+
+		
+		
+		<div class="thumb-rapper">
+	
+			<div class="thumb">
+			<div id="thumb-title" class="videoWrapper2">
+		<div style="width: 99%;height: auto; background-color: black;float: left;">
+			
+			
+			<img id="img-title" src="img/title-mapping.jpg" alt="title-mapping">
+			<iframe class="video-title"  id="ls_embed_1573371168" src="" width="640" height="360" 
+					allow="autoplay; fullscreen" allowfullscreen> </iframe>
+			</div>
+			
+</div>
+	</div> 	
+	
+	<div id="thumbFull" class="thumb">
+		<div class="videoWrapper2">
+	<div class="button-control-2">
+		
+<button class="video-nr" >video1:</button>
+		
+		<div class="button-control-title-2">
+			<button  class="button-2" onclick = 
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 ">random: onetime-event</button>
+			
+			<button  class="button-2" onclick = 
+					
+					"myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+				 "
+					>random: interval-event</button>
+	</div>
+		
+<button onclick="Flip(thumbs[0])">flip</button>
+<button onclick="Flop(thumbs[0])">flop</button>
+<button onclick="FlipFlop(thumbs[0])">flip/flop</button>
+<button onclick="colorVisionActive(thumbs[0])">color shift</button>
+		
+		
+		
+		<button class="button-2" onclick="openNav(fullscreen[0])"
+				>fullscreen</button>
+		<button class="button-2" onclick="closeNav(fullscreen[0])"
+				>exit fullscreen</button>
+			
+	</div>
+			
+		<iframe id="thumb3" class="video1" width="1206" height="678" src="" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			
+</div>
+	</div> 	
+		
+		<div id="thumbFull1" class="thumb">
+		<div class="videoWrapper2">
+				
+	<div class="button-control-2">
+<button class="video-nr" >video2:</button>
+		
+		<div class="button-control-title-2">
+			<button  class="button-2" onclick = 
+					
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 "
+					>random: onetime-event</button>
+			
+			<button  class="button-2" onclick = 
+					"myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+				 " >random: interval-event</button>
+	</div>
+		
+<button onclick="Flip(thumbs[1])">flip</button>
+<button onclick="Flop(thumbs[1])">flop</button>
+<button onclick="FlipFlop(thumbs[1])">flip/flop</button>
+<button onclick="colorVisionActive(thumbs[1])">color shift</button>
+		
+		<button class="button-2" onclick="openNav(fullscreen[1])"
+				>fullscreen</button>
+		<button class="button-2" onclick="closeNav(fullscreen[1])"
+				>exit fullscreen</button>
+	</div>
+			
+		<iframe id="thumb4"  class="video2" width="1206" height="678" src=""
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+		
+</div>
+	</div> 	
+		<div id="thumbFull2" class="thumb">
+		<div class="videoWrapper2">
+				
+	<div class="button-control-2">
+<button class="video-nr" >video3:</button>
+		
+		<div class="button-control-title-2">
+			<button  class="button-2" onclick = 
+					
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 "
+					>random: onetime-event</button>
+			
+			<button  class="button-2" onclick = 
+					"
+					 myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+					 
+				 " >random: interval-event</button>
+	</div>
+		
+<button onclick="Flip(thumbs[2])">flip</button>
+<button onclick="Flop(thumbs[2])">flop</button>
+<button onclick="FlipFlop(thumbs[2])">flip/flop</button>
+<button onclick="colorVisionActive(thumbs[2])">color shift</button>
+		
+		<button class="button-2" onclick="openNav(fullscreen[2])"
+				>fullscreen</button>
+		<button class="button-2" onclick="closeNav(fullscreen[2])"
+				>exit fullscreen</button>
+
+	</div>
+			
+		
+		<iframe id="thumb5"  class="video3" width="1206" height="678" src=""
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+</div>
+	</div> 	
+		
+		<div id="thumbFull3" class="thumb">
+		<div class="videoWrapper2">
+				
+	<div class="button-control-2">
+<button class="video-nr" >video4:</button>
+		
+		<div class="button-control-title-2">
+			<button  class="button-2" onclick = 
+					
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 "
+					>random: onetime-event</button>
+			
+			<button  class="button-2" onclick = 
+					
+					"myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+				 "
+					>random: interval-event</button>
+	</div>
+		
+<button onclick="Flip(thumbs[3])">flip</button>
+<button onclick="Flop(thumbs[3])">flop</button>
+<button onclick="FlipFlop(thumbs[3])">flip/flop</button>
+<button onclick="colorVisionActive(thumbs[3])">color shift</button>
+		
+		<button class="button-2" onclick="openNav(fullscreen[3])"
+				>fullscreen</button>
+		<button class="button-2" onclick="closeNav(fullscreen[3])"
+				>exit fullscreen</button>
+
+	</div>
+			
+		<iframe id="thumb6"  class="video4" width="1206" height="678" src=""
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+</div>
+	</div> 	
+		
+		<div id="thumbFull4" class="thumb">
+		<div class="videoWrapper2">
+				
+	<div class="button-control-2">
+<button class="video-nr" >video4:</button>
+		
+		<div class="button-control-title-2">
+			<button  class="button-2" onclick = 
+					
+					"myColorDegree();
+					 startAllRandomEvent();
+					myColorStop();
+					setDefaultStop();
+					 "
+					>random: onetime-event</button>
+			
+			<button  class="button-2" onclick = 
+					
+					"myColor(); 
+					 timerControl();
+					clearOneColor();
+					 stopAllRandomEvent();
+				 "
+					>random: interval-event</button>
+	</div>
+		
+<button onclick="Flip(thumbs[4])">flip</button>
+<button onclick="Flop(thumbs[4])">flop</button>
+<button onclick="FlipFlop(thumbs[4])">flip/flop</button>
+<button onclick="colorVisionActive(thumbs[4])">color shift</button>
+		
+		<button class="button-2" onclick="openNav(fullscreen[4])"
+				>fullscreen</button>
+		<button class="button-2" onclick="closeNav(fullscreen[4])"
+				>exit fullscreen</button>
+
+	</div>
+			
+		<iframe id="thumb7"  class="video5" width="1206" height="678" src=""
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+</div>
+	</div> 	
+			
+<script src="js/videoPlayer.js"></script>		
+			
+<script>
+	
+	// rotate button begin
+	
+		var thumbs = [document.getElementById("thumb3"), document.getElementById("thumb4"), document.getElementById("thumb5"), document.getElementById("thumb6") , document.getElementById("thumb7")];
+
+	 	function FlipFlop(thumbx){	
+			
+  if (thumbx.style.transform == "" ) {
+    thumbx.style.transform = "rotate(180deg)";
+  } else {
+    thumbx.style.transform = "";
+	myColorStop();
+	setDefaultStop();
+  }
+}			
+			
+		function Flop(thumbx){		
+  if (thumbx.style.transform == "" ) {
+    thumbx.style.transform = "rotateX(180deg)";
+  } else {
+    thumbx.style.transform = "";
+	myColorStop();
+	setDefaultStop();
+  }
+}	
+			
+			
+	function Flip(thumbx){	
+  if (thumbx.style.transform == "" ) {
+    thumbx.style.transform = "rotateY(180deg)";
+  } else {
+    thumbx.style.transform = "";
+	myColorStop();
+	setDefaultStop();
+  }
+}		
+	
+	
+	
+	// night vision button
+		
+
+	
+	
+	
+	function colorVisionActive(thumbsx){
+		if (thumbsx.style.filter == ""){
+
+			myColorelementDegree2(thumbsx);
+		
+		}
+		else {
+			thumbsx.style.filter = "";
+			myColorStop();
+			setDefaultStop();
+		}
+	}
+	
+
+	
+	
+// random color one event 
+	
+	function clearOneColor(){
+		stopColorDegree();
+	}
+	
+	
+	function stopColorDegree(){
+			for (let i=0; i<thumbs.length; i++){
+			stopColorelementDegree2(thumbs[i]);
+			}
+		}
+	
+	
+function stopColorelementDegree2(stopDegreex){
+    stopDegreex.style.filter = 'none';
+}
+	
+	
+	
+	function myColorDegree(){
+			for (let i=0; i<thumbs.length; i++){
+			myColorelementDegree2(thumbs[i]);
+			}
+		}
+	
+	
+function myColorelementDegree2(myColorDegreex){
+	
+	var ColorDegre = ["contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(0deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(90deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(130deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(180deg)", 
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg)",
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(240deg)",
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(270deg)",
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(300deg)",
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg)",
+					  "contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(360deg)"
+					 ];    
+    var randDegree = ColorDegre[Math.floor(Math.random() * ColorDegre.length)];
+    myColorDegreex.style.filter = randDegree;
+	document.getElementById("img-title").style.opacity = ("0.5");
+}
+	
+	
+	
+//-- rotate random one event
+	
+			
+			
+	function stopAllRandomEvent(){
+ StopRandomEvent();
+	 }		
+	
+			function StopRandomEvent(){
+				
+				for ( let i=0; i<thumbs.length; i++) {
+					stopNewRandomEvent(thumbs[i]);
+					}	
+			}
+			
+			function stopNewRandomEvent(stopEventx){
+    stopEventx.style.transform = 'none';
+}
+
+	
+	var eventrOn = true;
+			
+			function startAllRandomEvent() {
+  if (eventrOn == true) {	
+allRandomEvent();
+  } else {
+ "";
+ }
+	}
+			
+			
+			function allRandomEvent(){
+				
+				for ( let i=0; i<thumbs.length; i++) {
+					getNewRandomEvent(thumbs[i]);
+					}	
+			}
+			
+			function getNewRandomEvent(randomeventx){
+				var myArray = ['rotateY(180deg)','rotateX(180deg)','rotate(180deg)', 'rotate("")'];    
+	
+    var rand = myArray[Math.floor(Math.random() * myArray.length)];
+    randomeventx.style.transform = rand;
+}
+
+		
+		
+	
+	
+// random color interval
+	
+var elementThumb = [ document.getElementById("thumb3"), document.getElementById("thumb4") , document.getElementById("thumb5") , document.getElementById("thumb6") , document.getElementById("thumb7")];
+	
+	function myColor(){
+	
+			for (let i=0; i<elementThumb.length; i++){
+			myColor2(elementThumb[i]);
+			}
+		}
+	
+	
+function myColor2(elementThumbx){
+	
+	var myColor = ['60s','120s','240s','360s','480s','720s'];    
+    var randColor = myColor[Math.floor(Math.random() * myColor.length)];
+	
+	elementThumbx.classList.toggle("thumb-test");
+    elementThumbx.style.animationDuration = randColor;
+	
+	elementThumbx.style.animationDuration = randColor; 
+	elementThumbx.style.WebkitAnimationDuration = randColor; 
+	elementThumbx.style.WebkitAnimationDuration = "randColor";  // Code for Chrome, Safari, and Opera
+	elementThumbx.style.animationDuration = "randColor";
+	document.getElementById("img-title").style.opacity = ("0.5");
+}
+
+	
+	
+	function myColorStop(){
+	
+			for (let i=0; i<elementThumb.length; i++){
+			myColor2stop(elementThumb[i]);
+			}
+		}
+	
+function myColor2stop(elementThumbStopx){
+	elementThumbStopx.classList.toggle("none");
+	elementThumbStopx.style.animationDuration = "0s";
+}
+	
+	
+	function setDefaultStop(){
+				
+			for (let i=0; i<thumbs.length; i++){
+				thumbs[i].style.transitionDelay= "0s";
+				clearInterval(newInterval);
+			}
+		} 	
+	
+	var timerOn = false;
+	
+	function setDefault(){
+				clearInterval(newInterval);
+				timerOn = false;
+				
+		for (let i=0; i<thumbs.length; i++){
+				thumbs[i].style.transitionDelay= "0s";
+				thumbs[i].style.transform = "none";
+			}
+		} 	
+			
+			function timerControl() {
+ 
+  if (timerOn == true) {	
+ stopEvent();
+  } else {
+   startTimer() ;
+  }
+	}
+	
+		
+			
+			function stopEvent() {
+				timerOn = false;
+    	setDefault();
+        } 
+			
+	function startTimer() {
+								timerOn= true;
+            newInterval = setInterval(allRandomEvent3,15000);
+        } 
+			
+	
+	function allRandomEvent3(){
+				for ( let i=0; i<thumbs.length; i++) {
+					randomly(thumbs[i]);
+					
+					}	
+			}
+			
+		
+	
+	function randomly(thumbsx){
+	
+	var myArray = ['rotateY(180deg)','rotateX(180deg)','rotate(180deg)', 'rotate("")'];    
+   
+				
+				var rand = myArray[Math.floor(Math.random() * myArray.length)];
+				
+								
+	var delayArray = ["2s", "4s", "8s", "14s"];    
+   
+	var randDelay = delayArray[Math.floor(Math.random() * delayArray.length)];
+    thumbsx.style.transform = rand; 
+	thumbsx.style.transitionDelay= randDelay;
+}
+	
+
+	var nightOn = true;
+	
+	function myNightVision(){
+		if (nightOn == false){
+		"";
+		}
+		else {
+		myNightVisionActive();
+		}
+	}
+	
+	
+	function myNightVisionActive(){
+	
+			for (let i=0; i<elementThumb.length; i++){
+			myNightVision2(elementThumb[i]);
+				
+			}
+		}
+	
+	
+function myNightVision2(myNightVision2x){
+	nightOn = true;
+	
+	
+	document.getElementById("img-title").style.opacity = ("0.5");
+	myNightVision2x.style.transform = 'none';
+	myNightVision2x.classList.toggle("none");
+	myNightVision2x.style.animationDuration = "0s";
+	myNightVision2x.style.filter = 'sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2)';
+}
+				
+	
+	function setDefaultVision(){
+				clearInterval(newInterval);
+		for (let i=0; i<thumbs.length; i++){
+			thumbs[i].style.transitionDelay= "0s";
+			thumbs[i].style.transform = "none";
+			}
+		} 	
+	
+
+// fullscreen
+	
+var fullscreen = ["thumbFull", "thumbFull1" , "thumbFull2", "thumbFull3" , "thumbFull4"];
+
+function openNav(fullscreenx) 
+				
+			{
+  	document.getElementById(fullscreenx).style.width = "100%";
+	document.getElementById(fullscreenx).style.height = "100%";
+	document.getElementById(fullscreenx).style.zIndex = "8";	
+	document.getElementById(fullscreenx).style.position = "fixed";
+	document.getElementById(fullscreenx).style.backgroundColor = "rgba(0, 0, 0, 0.67)";
+	document.getElementById(fullscreenx).style.left = "0";
+	document.getElementById(fullscreenx).style.top = "0";
+	
+	const collection = document.getElementsByClassName("button-control-title-2");
+	collection[0].style.display = "block";
+	collection[1].style.display = "block";
+	collection[2].style.display = "block";
+	collection[3].style.display = "block";
+	collection[4].style.display = "block";
+}
+
+function closeNav(fullscreenx) {
+  	document.getElementById(fullscreenx).style.width = "49.7%";
+	document.getElementById(fullscreenx).style.height = "auto";
+	document.getElementById(fullscreenx).style.zIndex = "1";	
+	document.getElementById(fullscreenx).style.position = "relative";
+	document.getElementById(fullscreenx).style.backgroundColor = "none";
+	document.getElementById(fullscreenx).style.left = "none";
+	document.getElementById(fullscreenx).style.top = "0";
+	
+	const collection = document.getElementsByClassName("button-control-title-2");
+	collection[0].style.display = "none";
+	collection[1].style.display = "none";
+	collection[2].style.display = "none";
+	collection[3].style.display = "none";
+	collection[4].style.display = "none";
+}
+	
+	// url shuffle
+	/*
+	function urlChange(){
+			for (let i=0; i<thumbs.length; i++){
+			myUrlChange(thumbs[i]);
+			}
+		}
+	
+	
+function myUrlChange(myUrlChangex){
+	
+	var urlList = ["https://www.youtube.com/embed/h1wly909BYw?&autoplay=1",
+				   "https://www.youtube.com/embed/rcm6kmLUggg?&autoplay=1",
+				   "https://www.youtube.com/embed/4wb6o3QvrxY?&autoplay=1",
+				   "https://www.youtube.com/embed/QOjmvL3e7Lc?&autoplay=1",
+				   "https://www.youtube.com/embed/GxhSqwbSpbs?&autoplay=1",
+				   "https://www.youtube.com/embed/vVyBOU9Huvo?&autoplay=1",
+				   "https://www.youtube.com/embed/rG13FY2ytno?&autoplay=1",
+				   "https://www.youtube.com/embed/bgsE-LRplIg?&autoplay=1",
+				   "https://www.youtube.com/embed/jzhqsejYI5E?&autoplay=1",				   "https://www.youtube.com/embed/tdQOYaEQC3o?&autoplay=1",
+				  ];    
+    var randUrl =urlList[Math.floor(Math.random() * urlList.length)];
+    myUrlChangex.src = randUrl;
+}
+	
+	*/
+	
+</script>
+		</div>
+	</body>
+</html>
