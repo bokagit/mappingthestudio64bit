@@ -10,3 +10,7 @@ The collaboration between art and technology dates back to ancient times. My jou
 3. Reasoning: It promotes analytical discussions and logical debates, enhancing the perspective on the work.
 4. Presentation Platform: Maakaf provides a diverse and broad audience, offering a robust platform to showcase and get feedback for the artwork.
 5. Dialogue Between Art and Technology: The association with maakaf will establish an invaluable bridge between the realms of art and modern technologies, fostering a meaningful dialogue.
+
+Visit site: https://bokagit.github.io/mappingthestudio64bit
+
+
