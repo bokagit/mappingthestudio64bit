@@ -553,7 +553,7 @@ margin:0px;
   .text-rapper , .text-rapper-manuel , .thumb-rapper-3 , thumb-rapper-2 {
 	   max-width: 112.5rem;
 	 }
-	
+	}
 
 @media only screen and (min-width: 2560px) {
 .popup-content {
@@ -566,11 +566,7 @@ p {
 }
 
 
-
-
-
-   
-			@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
  .spanStyle{
 	margin-left:0px;
   }
