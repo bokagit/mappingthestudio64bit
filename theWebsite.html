@@ -85,18 +85,26 @@ display: none;
 .button-control-title {
 width: auto;
 margin: 20px;
-z-index:5;
+z-index: 5;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+gap: 5px;
 }
 
 .button-control-title-2 {
-margin-bottom: 6px;
-margin-right: 6px;
 display: none;
-float:left;
 }
 
 .thumb:hover .button-control-2 {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
 }
 
 
@@ -122,17 +130,12 @@ opacity: 0.7
 background-color: rgba(255, 255, 0, 1);
 font-weight: 500;
 color: black;
-margin-top: 2px;
-margin-bottom: 4px;
-border-radius: 5px; 
 }
 
 		
 button
 {
 font-size: 12pt;
-margin-left: 2px;
-margin-bottom: 2px;
 border: none;
 background-color: rgba(237, 237, 237, 0.78);
 padding: 2px 6px 2px 6px ;
@@ -147,7 +150,9 @@ border-radius: 5px;
 
 button:hover { transform: scale(.95);}
 		
-body{background-color: #343434;}
+body{background-color: #343434;
+width: 100%;
+}
 
 			.video-nr {
 background-color: #e0e0e0;
@@ -171,20 +176,24 @@ background-color: #e0e0e0;
 	border: none;	
 }
 
-.thumb {width: 49.7%;
-		display: inline-block;
+.thumb {
+    width: 49.7%;
+    margin: 0.1% ;
 }
 
-			@media only screen and (max-width: 800px) {
-  .thumb {
-    width: 100%;
-  }
+@media only screen and (max-width: 800px) {
+    .thumb {
+        width: 100%;
+    }
 }
-			
+
 .thumb-rapper {
-	width: 99%;
+    width: 99%;
 	margin-left: auto;
 	margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 	
@@ -192,30 +201,24 @@ background-color: #e0e0e0;
 iframe {
 		z-index: 2;
 		border: none;}
-
-
-
-	
 		
-.filtered-3 {
-  	filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
-	
- filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
--webkit-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
--moz-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
-  opacity: 1;
-}		
+		.thumb-test {
+    animation: image_blur infinite;
+}
 
-	.thumb-test {
-    -webkit-animation: image_blur infinite;
+@keyframes image_blur {
+  0%   { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg);
+         filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg); }
+  25%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg);
+         filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg); }
+  50%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg);
+         filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg); }
+  75%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg);
+         filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg); }
+  100% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg);
+         filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg); }
 }
-	@-webkit-keyframes image_blur {
-  0% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg);}
-25% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg);}
-  50% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg);}
-		75% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg);}
-  100% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg);}	
-}
+
 	
 	.thumb-test-stop {
 filter: none;
@@ -232,7 +235,10 @@ z-index: 8;
 	#thumb-title {
  background-color: black;
 }
-		
+		/* adding cersor*/
+		.short-rapper-gray{
+			background-color: rgb(62, 62, 62);
+		}
 			
 	</style>
 	</head>
@@ -241,10 +247,9 @@ z-index: 8;
 		
 		<div class="logo-container">
 		<div class="logo">
-			<ul style="background-color: gray;">
+			<ul class="gray-background">
   <li><a href="index.html">Home</a></li>
 <li><a href="theWebsite-de.html">German</a></li>
-<li><a href="#content">Contents</a></li>
   <li><a href="infoManual.html#usability">Usability</a></li>
   <li><a href="infoManual.html">About</a></li>
   <li><a href="contact_form.html">Contact</a></li>
@@ -256,18 +261,16 @@ z-index: 8;
 					<span class="logo-2">The website</span>	
 		</div>
 		
-		<div id="content" style="background-color: rgb(62, 62, 62);"  class="short-rapper">
+		<div id="content" class="short-rapper short-rapper-gray">
 					<a class="short-link-2" href="index.html">Home</a>
 				<a  class="short-link-2" href="theVideoWorks.html">The video works</a>
-						<a style="opacity: 0.4;" class="short-link-2" href="#">The website</a>
+						<a class="short-link-2 home-link" href="#">The website</a>
 							<a class="short-link-2" href="theEventDebat.html">The event, debate</a>
 				<a  class="short-link-2  short-link2" href="infoManual.html">About</a>
 			<a  class="short-link short-link2 short-link-lang"  href="theWebsite-de.html">German</a>
 			</div>	
 		<div class="button-control-title">
-		
-		
-		
+
 			<button  class="button-control-event" onclick = 
 					"myColorDegree();
 					 startAllRandomEvent();
@@ -309,12 +312,10 @@ z-index: 8;
 	
 			<div class="thumb">
 			<div id="thumb-title" class="videoWrapper2">
-		<div style="width: 99%;height: auto; background-color: black;float: left;">
-			
-			
+		<div>
 			<img id="img-title" src="img/title-mapping.jpg" alt="title-mapping">
 			<iframe class="video-title"  id="ls_embed_1573371168" src="" width="640" height="360" 
-					allow="autoplay; fullscreen" allowfullscreen> </iframe>
+			title="the Pitch drop">	allow="autoplay; fullscreen" allowfullscreen> </iframe>
 			</div>
 			
 </div>
@@ -358,7 +359,7 @@ z-index: 8;
 			
 	</div>
 			
-		<iframe id="thumb3" class="video1" width="1206" height="678" src="" 
+		<iframe id="thumb3" class="video1" width="1206" height="678" src="" title="stream-1" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 			
@@ -400,7 +401,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 				>exit fullscreen</button>
 	</div>
 			
-		<iframe id="thumb4"  class="video2" width="1206" height="678" src=""
+		<iframe id="thumb4"  class="video2" width="1206" height="678" src="" title="stream-2" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 		
@@ -445,7 +446,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 	</div>
 			
 		
-		<iframe id="thumb5"  class="video3" width="1206" height="678" src=""
+		<iframe id="thumb5"  class="video3" width="1206" height="678" src="" title="stream-3" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>
@@ -489,7 +490,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 	</div>
 			
-		<iframe id="thumb6"  class="video4" width="1206" height="678" src=""
+		<iframe id="thumb6"  class="video4" width="1206" height="678" src="" title="stream-4" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>
@@ -533,7 +534,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 	</div>
 			
-		<iframe id="thumb7"  class="video5" width="1206" height="678" src=""
+		<iframe id="thumb7"  class="video5" width="1206" height="678" src="" title="stream-5" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>

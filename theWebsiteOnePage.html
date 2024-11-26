@@ -50,20 +50,19 @@
 			
 	</script>
 
-
-		<style>
-			* {
+<style>
+	* {
 margin:0;
 padding:0;
 }
 
-		html, body, blockquote, div, p, h1 
+html, body, blockquote, div, p, h1 
 {
 font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
 }
 
-		
+
 .button-control {
 float: left;
 width: auto; 
@@ -85,22 +84,30 @@ display: none;
 .button-control-title {
 width: auto;
 margin: 20px;
-z-index:5;
+z-index: 5;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+gap: 5px;
 }
 
 .button-control-title-2 {
-margin-bottom: 6px;
-margin-right: 6px;
 display: none;
-float:left;
 }
 
 .thumb:hover .button-control-2 {
-  display: block;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+gap: 5px;
 }
 
 
-.button-control-reset, .button-control-event, .button-control-reset-2 , .button-control-reset-3{
+.button-control-reset, .button-control-event, .button-control-reset-2 , .button-control-reset-3 {
 width: auto; 
 background-color: rgba(103, 103, 103, 0.8);
 font-weight: 600;
@@ -112,33 +119,27 @@ border-radius: 5px;
 border: solid rgba(255, 255, 255, 0.4) 1px
 }
 
-			.button-control-reset-3{
+.button-control-reset-3{
 font-weight: 400; 
 text-decoration: none;
 opacity: 0.7
 }
 
-			
 .button-control-event {
 background-color: rgba(255, 255, 0, 1);
 font-weight: 500;
 color: black;
-margin-top: 2px;
-margin-bottom: 4px;
-border-radius: 5px; 
 }
 
-		
+
 button
 {
 font-size: 12pt;
-margin-left: 2px;
-margin-bottom: 2px;
 border: none;
 background-color: rgba(237, 237, 237, 0.78);
 padding: 2px 6px 2px 6px ;
 }
-		
+
 .button-2
 {
 background-color:rgb(160, 160, 160);
@@ -147,200 +148,98 @@ border-radius: 5px;
 }
 
 button:hover { transform: scale(.95);}
-		
-body{background-color: #343434;}
 
-			.video-nr {
+body{background-color: #343434;
+width: 100%;
+}
+
+	.video-nr {
 background-color: #e0e0e0;
 }
 
 .video-nr:hover { transform: none;}
-	
+
 .videoWrapper2 {
-	
-	top: 0px;
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	height: 0;
-    border: none;
+
+top: 0px;
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+border: none;
 }
 .videoWrapper2 iframe {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: none;	
+position: absolute;
+left: 0;
+width: 100%;
+height: 100%;
+border: none;	
 }
 
-.thumb {width: 49.7%;
-		display: inline-block;
+.thumb {
+width: 49.7%;
+margin: 0.1% ;
 }
 
-			@media only screen and (max-width: 800px) {
-  .thumb {
-    width: 100%;
-  }
+@media only screen and (max-width: 800px) {
+.thumb {
+width: 100%;
 }
-			
+}
+
 .thumb-rapper {
-	width: 99%;
-	margin-left: auto;
-	margin-right: auto;
+width: 99%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
-	
-				
+
+		
 iframe {
-		z-index: 2;
-		border: none;}
-	
-			.logo {
-		width:auto;
-			}
-			
-			.logo-container {
-		width: 100%;
-		background-color: rgba(255, 255, 255, 0.1);
-		padding-top:20px;
-		padding-bottom:20px;
-		
-			}	
-			
-			
-			.logo-link {
-				text-decoration: none; 
-       			position: relative; 
-				width: auto; 
-				font-weight: 600;
-				font-size: 16pt;
-				color: white;
-				margin-left: 45px
-			}
-			
-			.logo-link:hover:after {
-		  	width: 95%;
-		  background-color: yellow;
-			opacity: 0.6;
-    }
-			.logo-link:hover {
-			opacity: 0.9;
-			
-    }
-			
-		.logo-link:after {
-        position: absolute;
-        content: '';
-        height: 2px;
-		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-        bottom: -4px; 
-		
+z-index: 2;
+border: none;}
 
-
-       /****** 
-       optional values below 
-       ******/
-        
-        /* center - (optional) use with adjusting width   margin: 0 auto; */
-       
-		left: 0;
-        right: 0;
-		  
-		  
-		  /* optional animation */
-		  -o-transition:.2s;
-  		  -ms-transition:.2s;
-        -moz-transition:.2s;
-        -webkit-transition:.2s;
-        transition:.2s;
-    }
-			
-			.menu-sighn{
-				width: auto;
-				margin: 5px;
-				margin-left: 20px;
-				position: absolute;
-				opacity:0.8;
-			}
-			
-		
-			.menu-sighn:hover {
-				transform:rotate(180deg);
-				transition-timing-function: ease-out;
-				transition-duration: 0.3s;
-			}
-			
-			.logo:hover  ul{
-				display: inline-block;
-			}
-			
-			ul {
-  list-style-type: none;
-  margin-top:0px;
-  padding: 0;
-  width: 200px;
-  background-color: rgb(255, 255, 0);
-  display: none;
-  position: absolute;
-  z-index: 100;
-  border-radius:8px;
-  border-top-left-radius: 0px;
+.thumb-test {
+animation: image_blur infinite;
 }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+@keyframes image_blur {
+0%   { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg);
+ filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg); }
+25%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg);
+ filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg); }
+50%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg);
+ filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg); }
+75%  { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg);
+ filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg); }
+100% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg);
+ filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg); }
 }
 
-/* Change the link color on hover */
-li a:hover {
-  background-color: #555;
-  color: white;
-}
-			
-			
-	
-	
-		
-.filtered-3 {
-  	filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
-	
- filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
--webkit-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
--moz-filter: sepia(100%) hue-rotate(60deg) contrast(1.2) saturate(1) brightness(1.2);
-  opacity: 1;
-}		
 
-	.thumb-test {
-    -webkit-animation: image_blur infinite;
-}
-	@-webkit-keyframes image_blur {
-  0% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(60deg);}
-25% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(150deg);}
-  50% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(210deg);}
-		75% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(330deg);}
-  100% { -webkit-filter: contrast(1.2) saturate(1) brightness(1.2) sepia(1) hue-rotate(390deg);}	
-}
-	
-	.thumb-test-stop {
+.thumb-test-stop {
 filter: none;
 }
 
-			
+	
 #img-title {
- width:100%; 
- opacity:1;
+width:100%; 
+opacity:1;
 z-index: 8;
-	position: absolute;
+position: absolute;
 
 }
-	#thumb-title {
- background-color: black;
+#thumb-title {
+background-color: black;
 }
-		
-			
-	</style>
+/* adding cersor*/
+.short-rapper-gray{
+	background-color: rgb(62, 62, 62);
+}
+	
+</style>
 	</head>
 	
 	<body>
@@ -382,11 +281,11 @@ z-index: 8;
 	
 			<div class="thumb">
 			<div id="thumb-title" class="videoWrapper2">
-		<div style="width: 99%;height: auto; background-color: black;float: left;">
+		<div>
 			
 			
 			<img id="img-title" src="img/title-mapping.jpg" alt="title-mapping">
-			<iframe class="video-title"  id="ls_embed_1573371168" src="" width="640" height="360" 
+			<iframe class="video-title"  id="ls_embed_1573371168" src="" width="640" height="360" title="the Pitch drop"
 					allow="autoplay; fullscreen" allowfullscreen> </iframe>
 			</div>
 			
@@ -431,7 +330,7 @@ z-index: 8;
 			
 	</div>
 			
-		<iframe id="thumb3" class="video1" width="1206" height="678" src="" 
+		<iframe id="thumb3" class="video1" width="1206" height="678" src="" title="stream-1"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 			
@@ -473,7 +372,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 				>exit fullscreen</button>
 	</div>
 			
-		<iframe id="thumb4"  class="video2" width="1206" height="678" src=""
+		<iframe id="thumb4"  class="video2" width="1206" height="678" src="" title="stream-2"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 		
@@ -518,7 +417,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 	</div>
 			
 		
-		<iframe id="thumb5"  class="video3" width="1206" height="678" src=""
+		<iframe id="thumb5"  class="video3" width="1206" height="678" src="" title="stream-3"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>
@@ -562,7 +461,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 	</div>
 			
-		<iframe id="thumb6"  class="video4" width="1206" height="678" src=""
+		<iframe id="thumb6"  class="video4" width="1206" height="678" src="" title="stream-4"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>
@@ -606,7 +505,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 	</div>
 			
-		<iframe id="thumb7"  class="video5" width="1206" height="678" src=""
+		<iframe id="thumb7"  class="video5" width="1206" height="678" src="" title="stream-5"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 </div>
