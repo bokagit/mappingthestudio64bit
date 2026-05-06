@@ -1,0 +1,4 @@
+# Docker local files
+.docker/
+docker-compose.override.yml
+.env.docker
